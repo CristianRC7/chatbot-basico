@@ -1,0 +1,58 @@
+[
+    {
+      "tag": "saludos",
+      "patterns": ["hola", "buenas", "buenos dias", "buenas noches", "buenas tardes"],
+      "answer": "Me presento, soy Botberto. ¿En qué puedo ayudarte?"
+    },
+    {
+      "tag": "despedidas",
+      "patterns": ["adios", "hasta luego", "nos vemos", "hasta pronto"],
+      "answer": "¡Hasta luego! Si necesitas algo más, no dudes en volver."
+    },
+    {
+      "tag": "clima",
+      "patterns": ["como esta el clima", "hace sol", "esta lloviendo", "cual es el pronostico del tiempo"],
+      "answer": "Puedo darte el pronóstico del tiempo si me dices tu ubicación."
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": ["gracias", "muchas gracias", "te agradezco"],
+      "answer": "¡De nada! Siempre estoy aquí para ayudarte."
+    },
+    {
+      "tag": "desconocido",
+      "patterns": ["no entiendo", "no se", "explicar eso de nuevo"],
+      "answer": "Lo siento, creo que no te he entendido bien. ¿Puedes ser más específico?"
+    },
+    {
+      "tag": "ayuda",
+      "patterns": ["necesito ayuda", "¿me puedes ayudar?", "estoy confundido", "ayudame"],
+      "answer": "Claro, ¿en qué puedo ayudarte?"
+    },
+    {
+      "tag": "comida",
+      "patterns": ["tengo hambre", "¿qué hay para comer?", "recomiéndame algo para comer"],
+      "answer": "¿Qué tipo de comida te gustaría? Puedo sugerirte algunas opciones."
+    },
+    {
+      "tag": "horario",
+      "patterns": ["que hora es", "¿A qué hora empieza?", "¿Cuál es el horario?"],
+      "answer": "La hora es 11:58 PM"
+    },
+    {
+        "tag": "broma",
+        "patterns": ["cuenta un chiste", "hazme reír", "dime algo gracioso"],
+        "answer": [
+            "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+            "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
+            "¿Qué le dice un jardinero a otro? ¡Eres un rastrero!",
+            "¿Cuál es el colmo de un electricista? Tener mala corriente.",
+            "¿Cuál es el animal más antiguo? La cebra, ¡porque está en blanco y negro!",
+            "¿Cuál es el café más peligroso? ¡El ex-preso!",
+            "¿Por qué el libro de matemáticas está triste? Porque tiene demasiados problemas.",
+            "¿Qué hace una impresora en la playa? ¡Imprime mar!",
+            "¿Qué le dice un cero a otro cero? ¡Nos vemos en el cero-cero!",
+            "¿Qué hace un pez en la oficina? ¡Trabaja con archivos!"
+        ]
+    }    
+]
