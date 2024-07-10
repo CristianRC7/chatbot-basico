@@ -14,14 +14,18 @@ def find_response(user_input):
     for item in data:
         if any(pattern in user_input.lower() for pattern in item['patterns']):
             if item['tag'] == 'broma':
-                return random.choice(item['answer'])
-            return item['answer']
-    return "Lo siento, no entiendo tu mensaje."
+                response = random.choice(item['answer'])
+            else:
+                response = item['answer']
+            return response, item['tag']
+    return "Lo siento, no entiendo tu mensaje.", "desconocido"
 
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.json.get('message')
-    response = find_response(user_input)
+    response, tag = find_response(user_input)
+    print(f"Mensaje del usuario: {user_input}")
+    print(f"Respuesta: {response}")
     return jsonify({"response": response})
 
 if __name__ == '__main__':

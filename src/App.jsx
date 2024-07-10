@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Logo from './image/shinra_kusakabe.webp';
+import BASE_URL from './Config';
+
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -14,7 +16,7 @@ function App() {
       setInput('');
       setIsThinking(true);
 
-      const response = await fetch('http://localhost:5000/chat', {
+      const response = await fetch(`${BASE_URL}`,{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
